@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 9 More in HTML</title>
+
+    <link rel="shortcut icon" href="./image.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Hello this is a Webpage</h1>
+    <img src="./illusion_paint.png" alt="This is an illusion paint wallpaper" height="400" />
+    <br />
+    <video src="./rain_vid.mp4" poster="./image.png" autoplay muted loop controls></video>
+    <audio src="./rain_aud.mp3" controls></audio>
+    <br />
+    <iframe src="https://sheryians.com/" frameborder="0" width="300" height="400"></iframe>
+
+    <div
+      style="
+        width: 300px;
+        margin: auto;
+        box-shadow: inset 0px 0px 100px black;
+        padding: 20px;
+        mask: url(&quot;./leaf_svg.png&quot;) center / contain no-repeat;
+        -webkit-mask: url(&quot;./leaf_svg.png&quot;) center / contain no-repeat;
+      "
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nobis molestias excepturi quos, accusamus, provident quae aspernatur, animi culpa magni cumque. Dolor rerum, deserunt saepe
+      aspernatur ex facere! Necessitatibus quod debitis velit nam nisi ullam. Laboriosam doloremque rerum sapiente atque tenetur aspernatur placeat facere, nesciunt doloribus quasi cupiditate
+      inventore? Rerum illum, voluptas corrupti animi odit saepe blanditiis velit ad enim eligendi, nobis dolore expedita hic eaque illo! Fugiat voluptatem est fuga libero, esse error quisquam
+      repudiandae facere quo ex aliquam? Dolor corporis maiores ratione, cumque blanditiis necessitatibus quae nulla, perspiciatis alias esse ex officiis voluptate quod dolorem repellat deserunt nam.
+    </div>
+
+    <form>
+      <div>
+        <label for="name">Name : </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" />
+      </div>
+
+      <div>
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" />
+      </div>
+
+      <div>
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" />
+      </div>
+
+      <div>
+        <label for="birthday">Birthday : </label>
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+
+      <div>
+        <label for="datetime">Current Date-Time : </label>
+        <input type="datetime-local" name="datetime" id="datetime" />
+      </div>
+
+      <div>
+        <label for="dp">Display Picture : </label>
+        <input type="file" name="dp" id="dp" />
+      </div>
+
+      <div>
+        <span>Gender : </span>
+        <label for="male"><input type="radio" name="gender" id="male" value="male" /> Male</label>
+        <label for="female"><input type="radio" name="gender" id="female" value="female" /> Female</label>
+      </div>
+
+      <div>
+        <label for="color">Favourite Color : </label>
+        <input type="color" name="color" id="color" />
+      </div>
+
+      <div>
+        <label for="age">Age : </label>
+        <input type="number" name="age" id="age" min="15" max="150" />
+      </div>
+
+      <div>
+        <b>Who is politician of india ? </b>
+        <br />
+        <label for="modi"><input type="checkbox" name="pm" id="modi" value="modi" /> Narendra Modi </label>
+        <br />
+        <label for="yogi"><input type="checkbox" name="pm" id="yogi" value="yogi" /> Yogi Adityanath </label>
+        <br />
+        <label for="amit"><input type="checkbox" name="pm" id="amit" value="amit" /> Amit Shah </label>
+        <br />
+        <label for="dharmendra"><input type="checkbox" name="pm" id="dharmendra" value="dharmendra" /> Dharmendra Pradhan </label>
+      </div>
+
+      <div>
+        <label for="height">Height : </label>
+        <input type="range" name="height" id="height" min="2" max="10" />
+      </div>
+
+      <div>
+        <label for="opt">Options list : </label>
+        <select name="opt" id="opt">
+          <option value="15">15</option>
+          <option value="25">25</option>
+          <option value="35">35</option>
+          <option value="45">45</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="details">Details</label>
+        <details>
+          <summary>Click here to see example</summary>
+          <pre>
+              <code>
+  &lt;select name="opt" id="opt"&gt;
+    &lt;option value="15"&gt;15&lt;/option&gt;
+    &lt;option value="25"&gt;25&lt;/option&gt;
+    &lt;option value="35"&gt;35&lt;/option&gt;
+    &lt;option value="45"&gt;45&lt;/option&gt;
+  &lt;/select&gt;
+              </code>
+          </pre>
+        </details>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
