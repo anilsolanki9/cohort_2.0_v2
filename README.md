@@ -35,9 +35,11 @@ Cohort_2.0_V2/
 ## 📚 What You'll Find
 
 ### 📖 Classes
+
 Contains all lecture code, practice files, notes, and assignments organized according to the course modules.
 
 ### 💻 Projects
+
 Contains standalone projects built throughout the cohort, ranging from beginner-level to advanced full-stack applications.
 
 ---
@@ -45,6 +47,7 @@ Contains standalone projects built throughout the cohort, ranging from beginner-
 ## 🛠 Tech Stack
 
 ### Frontend
+
 - HTML5
 - CSS3
 - JavaScript (ES6+)
@@ -53,12 +56,14 @@ Contains standalone projects built throughout the cohort, ranging from beginner-
 - Vite
 
 ### Backend
+
 - Node.js
 - Express.js
 - MongoDB
 - Mongoose
 
 ### Tools
+
 - Git
 - GitHub
 - VS Code
@@ -84,6 +89,7 @@ Contains standalone projects built throughout the cohort, ranging from beginner-
 This repository is updated regularly as I progress through the course.
 
 Each module will include:
+
 - ✅ Class Code
 - ✅ Practice Exercises
 - ✅ Assignments
@@ -97,11 +103,18 @@ Each module will include:
 This is Version 2 of my Cohort 2.0 repository.
 
 Instead of continuing from my previous repository, I chose to restart the entire learning journey with:
+
 - Better organization
 - Cleaner code
 - Updated concepts
 - Improved projects
 - Consistent documentation
+
+---
+
+# Projects
+
+1. Simple Portfolio Website | https://github.com/anilsolanki9/simple-practice-resume-website
 
 ---
 
