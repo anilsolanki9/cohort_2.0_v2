@@ -115,6 +115,7 @@ Instead of continuing from my previous repository, I chose to restart the entire
 # Projects
 
 1. Simple Portfolio Website | (Repo) https://github.com/anilsolanki9/simple-practice-resume-website | (Live) https://anilsolanki9.github.io/simple-practice-resume-website/
+2. Ghost World Entry Gate | (Repo) https://github.com/anilsolanki9/ghost_world_entry_task | (Live) https://anilsolanki9.github.io/ghost_world_entry_task/
 
 ---
 
