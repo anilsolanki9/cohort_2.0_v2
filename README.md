@@ -116,6 +116,8 @@ Instead of continuing from my previous repository, I chose to restart the entire
 
 1. Simple Portfolio Website | (Repo) https://github.com/anilsolanki9/simple-practice-resume-website | (Live) https://anilsolanki9.github.io/simple-practice-resume-website/
 2. Ghost World Entry Gate | (Repo) https://github.com/anilsolanki9/ghost_world_entry_task | (Live) https://anilsolanki9.github.io/ghost_world_entry_task/
+3. Animated Eye | (Repo) https://github.com/anilsolanki9/animated-eye | (Live) https://anilsolanki9.github.io/animated-eye/
+4. Spiderman sticky character cards | (Repo) https://github.com/anilsolanki9/spider-man-sticky-cards/ | (Live) https://anilsolanki9.github.io/spider-man-sticky-cards/
 
 ---
 
