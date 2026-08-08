@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#s1 {
+  width: 150px;
+  height: 100px;
+  background-color: orange;
+}
+
+#s2 {
+  width: 200px;
+  height: 100px;
+  background-color: blueviolet;
+}
+
+#s3 {
+  width: 250px;
+  height: 100px;
+  background-color: magenta;
+}
+
+#r1 {
+  width: 150px;
+  height: 100px;
+  background-color: orange;
+}
+
+#r2 {
+  width: 200px;
+  height: 100px;
+  background-color: blueviolet;
+
+  position: relative;
+  left: 500px;
+}
+
+#r3 {
+  width: 250px;
+  height: 100px;
+  background-color: magenta;
+}
+
+#a1 {
+  width: 150px;
+  height: 100px;
+  background-color: orange;
+
+  position: relative;
+}
+
+#a1c {
+  width: 50%;
+  height: 50%;
+  background-color: gray;
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+}
+
+#a2 {
+  width: 200px;
+  height: 100px;
+  background-color: blueviolet;
+
+  position: absolute;
+}
+
+#a3 {
+  width: 250px;
+  height: 100px;
+  background-color: magenta;
+}
+
+#f1 {
+  width: 200px;
+  height: 100px;
+  background-color: rgba(137, 43, 226, 0.467);
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+#sticky1 {
+  width: 300px;
+  height: 500px;
+  background-color: violet;
+  margin: 0 auto;
+  position: sticky;
+  top: 100px;
+}
+
+#space {
+  height: 100vh;
+}

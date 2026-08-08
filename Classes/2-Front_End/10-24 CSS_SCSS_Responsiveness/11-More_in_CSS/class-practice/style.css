@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  border-block: 2px solid black;
+}
+
+div {
+  margin: 1rem;
+}
+
+#linear1 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(red 0%, blue 10%, green 40%);
+}
+
+#linear2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right bottom in oklab, red 0%, blue 10%, green 40%);
+}
+
+#radial1 {
+  width: 200px;
+  height: 300px;
+  background: radial-gradient(red, blue, green);
+}
+
+#radial2 {
+  width: 200px;
+  height: 300px;
+  background: radial-gradient(circle, red, blue, green);
+}
+
+#image1 {
+  width: 200px;
+  height: 300px;
+  background-image: url(https://img.magnific.com/premium-vector/professional-cargo-ship-vector-illustration-isolated-background_1120558-57295.jpg?semt=ais_test_b&w=740&q=80);
+  background-size: contain;
+  background-position: center;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+}
+
+#image2 {
+  width: 200px;
+  height: 300px;
+  background-image: url(https://img.magnific.com/premium-vector/professional-cargo-ship-vector-illustration-isolated-background_1120558-57295.jpg?semt=ais_test_b&w=740&q=80);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+}
+
+#conic1 {
+  width: 200px;
+  height: 300px;
+  background: conic-gradient(from 90deg, red, blue, green);
+}
+
+#parent {
+  width: 500px;
+  height: 300px;
+  background-color: yellowgreen;
+}
+
+#child {
+  width: 50%;
+  height: 50%;
+  background-color: salmon;
+}
+
+#box {
+  height: 400px;
+  width: 500px;
+  border: 10px solid transparent;
+  margin: 5rem;
+  padding: 3rem;
+  background:
+    content-box linear-gradient(red, red),
+    padding-box linear-gradient(green, green),
+    border-box linear-gradient(yellow, yellow);
+}
+
+#border1 {
+  width: 300px;
+  height: 100px;
+  background-color: blueviolet;
+  border-radius: 50px;
+  border: 2px black ridge;
+}
+
+#border2 {
+  width: 300px;
+  height: 300px;
+  background-color: blueviolet;
+  border-radius: 50%;
+  border: 2px black dashed;
+}
