@@ -118,6 +118,9 @@ Instead of continuing from my previous repository, I chose to restart the entire
 2. Ghost World Entry Gate | (Repo) https://github.com/anilsolanki9/ghost_world_entry_task | (Live) https://anilsolanki9.github.io/ghost_world_entry_task/
 3. Animated Eye | (Repo) https://github.com/anilsolanki9/animated-eye | (Live) https://anilsolanki9.github.io/animated-eye/
 4. Spiderman sticky character cards | (Repo) https://github.com/anilsolanki9/spider-man-sticky-cards/ | (Live) https://anilsolanki9.github.io/spider-man-sticky-cards/
+5. Sweaters Van Heusen Landing Page | (Repo) https://github.com/anilsolanki9/webpage-design-CSS-Absolute-task-day-14 | (Live) https://anilsolanki9.github.io/webpage-design-CSS-Absolute-task-day-14/
+6. Washing Company Landing Page | (Repo) https://github.com/anilsolanki9/washing-company-landing-page-task-project | (Live) https://anilsolanki9.github.io/washing-company-landing-page-task-project/
+7. Nothing Phone 1 Website UI Clone | (Repo) https://github.com/anilsolanki9/nothing-phone-1-clone/ | (Live) https://anilsolanki9.github.io/nothing-phone-1-clone/
 
 ---
 

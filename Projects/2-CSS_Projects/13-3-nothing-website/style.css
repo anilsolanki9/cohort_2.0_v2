@@ -1,0 +1,215 @@
+@font-face {
+  font-family: nDots;
+  src: url(./assets/Ndot-55-DoenNkNm.ttf);
+}
+
+@font-face {
+  font-family: karotaki;
+  src: url(./assets/korataki-rg-3cf0d889.ttf);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+main {
+  width: 100%;
+  min-height: 100%;
+}
+
+#section1 {
+  height: 100vh;
+  position: relative;
+}
+
+.circuits {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 102%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  mix-blend-mode: screen;
+
+  display: block;
+  vertical-align: middle;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#left {
+  padding: 10px 40px;
+}
+
+#left h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: nDots;
+  font-weight: 100;
+}
+
+#mid {
+  padding: 15px 20px;
+}
+
+#mid input {
+  background-color: transparent;
+  font-size: 1.5rem;
+  width: 250px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+#mid img {
+  pointer-events: none;
+}
+
+#right {
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+  font-size: 0.9rem;
+  font-family: karotaki;
+  font-weight: 100;
+}
+
+#right .btn {
+  width: 200px;
+  height: 50px;
+}
+
+.btn img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#phones {
+  position: absolute;
+  z-index: 3;
+  top: 25%;
+  left: 60%;
+  height: 500px;
+
+  transform: rotate(-25deg);
+}
+
+#p1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#p2 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  height: 102%;
+}
+
+#title {
+  height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  padding: 0px 80px;
+  gap: 3rem;
+}
+
+#title h1 {
+  text-transform: uppercase;
+  font-family: karotaki;
+  font-size: 2.5rem;
+  font-weight: 100;
+  letter-spacing: 1pt;
+
+  color: rgb(175, 175, 175);
+
+  & span {
+    font-size: 1.8rem;
+  }
+}
+
+#title p {
+  font-family: nDots;
+  font-size: 1.5rem;
+  letter-spacing: 2pt;
+  font-weight: 100;
+  color: gray;
+}
+
+#section2 {
+  height: 100vh;
+  background-color: black;
+  position: relative;
+
+  > img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+  }
+
+  #phone {
+    position: absolute;
+    width: 300px;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 200px 0;
+
+    p {
+      position: relative;
+      z-index: 4;
+      font-size: 5rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      color: transparent;
+      background-image: url(./assets/10628409-water-droplets-on-a-metal-surface.jpg);
+      background-size: cover;
+      background-position: center;
+      background-clip: text;
+      -webkit-text-stroke: 2px rgba(218, 253, 255, 0.555);
+    }
+
+    img {
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+    }
+  }
+}
