@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Playground — samajh flexbox, dekh ke</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="eyebrow">interactive css lab</div>
+        <h1>Flexbox <span>Playground</span></h1>
+        <p>Left side se property values choose karo — right side mein box turant react karenge, aur neeche live CSS code bhi generate hoga. Best way to actually feel how flex works.</p>
+      </header>
+
+      <div class="layout">
+        <!-- CONTROLS -->
+        <div class="panel">
+          <div class="group">
+            <div class="group-label">display</div>
+            <div class="toggle-display">
+              <button class="opt active" data-group="display" data-value="flex">flex</button>
+              <button class="opt" data-group="display" data-value="block">block (normal)</button>
+            </div>
+          </div>
+
+          <div class="group" id="group-direction">
+            <div class="group-label">flex-direction</div>
+            <div class="btn-row">
+              <button class="opt active" data-group="flex-direction" data-value="row">row</button>
+              <button class="opt" data-group="flex-direction" data-value="row-reverse">row-reverse</button>
+              <button class="opt" data-group="flex-direction" data-value="column">column</button>
+              <button class="opt" data-group="flex-direction" data-value="column-reverse">column-reverse</button>
+            </div>
+          </div>
+
+          <div class="group" id="group-wrap">
+            <div class="group-label">flex-wrap</div>
+            <div class="btn-row">
+              <button class="opt active" data-group="flex-wrap" data-value="nowrap">nowrap</button>
+              <button class="opt" data-group="flex-wrap" data-value="wrap">wrap</button>
+              <button class="opt" data-group="flex-wrap" data-value="wrap-reverse">wrap-reverse</button>
+            </div>
+          </div>
+
+          <div class="group" id="group-justify">
+            <div class="group-label">justify-content <span class="hint">(main axis)</span></div>
+            <div class="btn-row">
+              <button class="opt active" data-group="justify-content" data-value="flex-start">flex-start</button>
+              <button class="opt" data-group="justify-content" data-value="flex-end">flex-end</button>
+              <button class="opt" data-group="justify-content" data-value="center">center</button>
+              <button class="opt" data-group="justify-content" data-value="space-between">space-between</button>
+              <button class="opt" data-group="justify-content" data-value="space-around">space-around</button>
+              <button class="opt" data-group="justify-content" data-value="space-evenly">space-evenly</button>
+            </div>
+          </div>
+
+          <div class="group" id="group-align">
+            <div class="group-label">align-items <span class="hint">(cross axis)</span></div>
+            <div class="btn-row">
+              <button class="opt active" data-group="align-items" data-value="stretch">stretch</button>
+              <button class="opt" data-group="align-items" data-value="flex-start">flex-start</button>
+              <button class="opt" data-group="align-items" data-value="flex-end">flex-end</button>
+              <button class="opt" data-group="align-items" data-value="center">center</button>
+              <button class="opt" data-group="align-items" data-value="baseline">baseline</button>
+            </div>
+          </div>
+
+          <div class="group" id="group-aligncontent">
+            <div class="group-label">align-content <span class="hint">(needs wrap + 2+ lines)</span></div>
+            <div class="btn-row">
+              <button class="opt active" data-group="align-content" data-value="stretch">stretch</button>
+              <button class="opt" data-group="align-content" data-value="flex-start">flex-start</button>
+              <button class="opt" data-group="align-content" data-value="flex-end">flex-end</button>
+              <button class="opt" data-group="align-content" data-value="center">center</button>
+              <button class="opt" data-group="align-content" data-value="space-between">space-between</button>
+              <button class="opt" data-group="align-content" data-value="space-around">space-around</button>
+            </div>
+          </div>
+
+          <div class="group" id="group-gap">
+            <div class="group-label">gap</div>
+            <div class="slider-row">
+              <input type="range" id="gapSlider" min="0" max="40" value="10" />
+              <span class="slider-value" id="gapValue">10px</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="group-label">number of boxes</div>
+            <div class="slider-row">
+              <input type="range" id="countSlider" min="2" max="10" value="5" />
+              <span class="slider-value" id="countValue">5</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PREVIEW + CODE -->
+        <div>
+          <div class="preview-card">
+            <div class="preview-head">
+              <div class="title">// live preview — .container</div>
+            </div>
+            <div class="container-box" id="container"></div>
+          </div>
+
+          <div class="code-card">
+            <div class="title">// generated CSS</div>
+            <button class="copy-btn" id="copyBtn">copy</button>
+            <pre id="codeOutput"></pre>
+          </div>
+
+          <div class="footnote">Tip: pehle <b>display: block</b> try karo, phir <b>flex</b> pe switch karke farak dekho.</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
