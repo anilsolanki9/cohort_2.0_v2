@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <h1>Users to follow</h1>
+      <div class="container">
+        <!-- Card 1: New user, Online -->
+        <div class="card card1">
+          <div class="inner">
+            <div class="media">
+              <img width="100px" height="300px" src="https://picsum.photos/seed/emma21/400/500" alt="Emma Watson" />
+              <div class="on-image">
+                <div class="badge new"><span>NEW</span></div>
+                <div class="status online">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                  </svg>
+                  <span class="status-text">online</span>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="user-name">Emma</h2>
+              <p class="user-about">Coffee addict, weekend hiker, and full-time dreamer chasing sunsets.</p>
+              <button class="follow-btn">
+                <div class="btn-inner">Follow</div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Not new, Offline -->
+        <div class="card card2">
+          <div class="inner">
+            <div class="media">
+              <img width="100px" height="300px" src="https://picsum.photos/seed/olivia45/400/500" alt="Olivia Grant" />
+              <div class="on-image">
+                <div class="badge"><span>NEW</span></div>
+                <div class="status">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                  </svg>
+                  <span class="status-text">offline</span>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="user-name">Olivia</h2>
+              <p class="user-about">Bookworm by day, painter by night. Always chasing a good story.</p>
+              <button class="follow-btn">
+                <div class="btn-inner">Follow</div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: New user, Offline -->
+        <div class="card card3">
+          <div class="inner">
+            <div class="media">
+              <img width="100px" height="300px" src="https://picsum.photos/seed/ava78/400/500" alt="Ava Reyes" />
+              <div class="on-image">
+                <div class="badge new"><span>NEW</span></div>
+                <div class="status">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                  </svg>
+                  <span class="status-text">offline</span>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="user-name">Ava</h2>
+              <p class="user-about">Fitness junkie who codes on the side. Two protein shakes a day keeps bugs away.</p>
+              <button class="follow-btn">
+                <div class="btn-inner">Follow</div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Not new, Online -->
+        <div class="card card4">
+          <div class="inner">
+            <div class="media">
+              <img width="100px" height="300px" src="https://picsum.photos/seed/sophia12/400/500" alt="Sophia Bennett" />
+              <div class="on-image">
+                <div class="badge"><span>NEW</span></div>
+                <div class="status online">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                  </svg>
+                  <span class="status-text">online</span>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="user-name">Sophia</h2>
+              <p class="user-about">UX designer obsessed with clean interfaces and even cleaner desks.</p>
+              <button class="follow-btn">
+                <div class="btn-inner">Follow</div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: New user, Online -->
+        <div class="card card5">
+          <div class="inner">
+            <div class="media">
+              <img width="100px" height="300px" src="https://picsum.photos/seed/mia33/400/500" alt="Mia Torres" />
+              <div class="on-image">
+                <div class="badge new"><span>NEW</span></div>
+                <div class="status online">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                  </svg>
+                  <span class="status-text">online</span>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="user-name">Mia</h2>
+              <p class="user-about">Plant mom with 30+ succulents and counting. Ask me about propagation.</p>
+              <button class="follow-btn">
+                <div class="btn-inner">Follow</div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Not new, Offline -->
+        <div class="card card6">
+          <div class="inner">
+            <div class="media">
+              <img width="100px" height="300px" src="https://picsum.photos/seed/isabella56/400/500" alt="Isabella Cruz" />
+              <div class="on-image">
+                <div class="badge"><span>NEW</span></div>
+                <div class="status">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                  </svg>
+                  <span class="status-text">offline</span>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="user-name">Isabella</h2>
+              <p class="user-about">Travel blogger currently chasing summer across three continents.</p>
+              <button class="follow-btn">
+                <div class="btn-inner">Follow</div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7: New user, Offline -->
+        <div class="card card7">
+          <div class="inner">
+            <div class="media">
+              <img width="100px" height="300px" src="https://picsum.photos/seed/amelia67/400/500" alt="Amelia Foster" />
+              <div class="on-image">
+                <div class="badge new"><span>NEW</span></div>
+                <div class="status">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                  </svg>
+                  <span class="status-text">offline</span>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="user-name">Amelia</h2>
+              <p class="user-about">Amateur baker turning kitchen disasters into Instagram wins.</p>
+              <button class="follow-btn">
+                <div class="btn-inner">Follow</div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8: Not new, Online -->
+        <div class="card card8">
+          <div class="inner">
+            <div class="media">
+              <img width="100px" height="300px" src="https://picsum.photos/seed/harper89/400/500" alt="Harper Lane" />
+              <div class="on-image">
+                <div class="badge"><span>NEW</span></div>
+                <div class="status online">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                  </svg>
+                  <span class="status-text">online</span>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="user-name">Harper</h2>
+              <p class="user-about">Indie musician, part-time barista, full-time daydreamer.</p>
+              <button class="follow-btn">
+                <div class="btn-inner">Follow</div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9: New user, Online -->
+        <div class="card card9">
+          <div class="inner">
+            <div class="media">
+              <img width="100px" height="300px" src="https://picsum.photos/seed/evelyn90/400/500" alt="Evelyn Marsh" />
+              <div class="on-image">
+                <div class="badge new"><span>NEW</span></div>
+                <div class="status online">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                  </svg>
+                  <span class="status-text">online</span>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="user-name">Evelyn</h2>
+              <p class="user-about">Dog mom, spreadsheet nerd, and self-proclaimed karaoke champion.</p>
+              <button class="follow-btn">
+                <div class="btn-inner">Follow</div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10: Not new, Offline -->
+        <div class="card card10">
+          <div class="inner">
+            <div class="media">
+              <img width="100px" height="300px" src="https://picsum.photos/seed/charlotte11/400/500" alt="Charlotte Reid" />
+              <div class="on-image">
+                <div class="badge"><span>NEW</span></div>
+                <div class="status">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                  </svg>
+                  <span class="status-text">offline</span>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2 class="user-name">Charlotte</h2>
+              <p class="user-about">Freelance photographer who sees a frame in every ordinary moment.</p>
+              <button class="follow-btn">
+                <div class="btn-inner">Follow</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

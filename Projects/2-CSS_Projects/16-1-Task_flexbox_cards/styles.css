@@ -1,0 +1,263 @@
+@font-face {
+  font-family: groot;
+  src: url(./Groote-Regular.otf);
+}
+
+@font-face {
+  font-family: agn;
+  src: url(./agneos-regular.ttf);
+}
+
+@font-face {
+  font-family: frag;
+  src: url(./fragordemoversionregular-wyxq9.otf);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+main {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 62, 165, 0.35), transparent 40%), radial-gradient(circle at 85% 15%, rgba(0, 217, 255, 0.3), transparent 40%),
+    radial-gradient(circle at 50% 90%, rgba(139, 62, 255, 0.3), transparent 45%), black;
+}
+
+main h1 {
+  padding: 30px 20px 0 20px;
+  font-size: 3rem;
+  color: white;
+}
+
+.container {
+  padding: 20px 20px;
+  min-height: 100vh;
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  z-index: 2;
+  padding: 8px;
+  color: black;
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  border-radius: 26px;
+  background: conic-gradient(from var(--angle), rgb(119, 0, 247), rgb(255, 63, 255), rgb(113, 0, 199), rgb(119, 0, 247));
+  animation: cardAnimate infinite 2s linear;
+  border-radius: 2rem;
+}
+
+@keyframes cardAnimate {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(238, 238, 238);
+  border: 3px solid black;
+  border-radius: calc(2rem - 5px);
+  overflow: hidden;
+}
+
+.media {
+  position: relative;
+  height: 380px;
+  border-bottom: 3px solid black;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: 0;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .on-image {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    inset: 0;
+
+    .badge {
+      width: 60px;
+      height: 60px;
+      background-color: greenyellow;
+
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(10%, -13%) rotate(20deg);
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-family: agn;
+      font-size: smaller;
+
+      span {
+        position: absolute;
+        z-index: 2;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: 3px solid black;
+        background-color: greenyellow;
+        z-index: 0;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 3px;
+        left: 2px;
+        z-index: -1;
+        background-color: black;
+        border-radius: 50%;
+      }
+
+      display: none;
+
+      &.new {
+        display: flex;
+      }
+    }
+
+    .status {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: black;
+      color: rgb(216, 0, 0);
+      padding: 5px 10px;
+      border-radius: 50px;
+
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      svg {
+        fill: red;
+        height: 12px;
+        width: 12px;
+      }
+
+      &.online {
+        color: greenyellow;
+
+        svg {
+          fill: rgb(165, 244, 46);
+        }
+      }
+    }
+  }
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .user-name {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: groot;
+  }
+
+  .user-about {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.741);
+  }
+
+  .follow-btn {
+    height: 50px;
+    outline: 0;
+    border: 0;
+    outline: 0;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 20px;
+
+    position: relative;
+    top: 5px;
+    left: 5px;
+
+    .btn-inner {
+      position: absolute;
+      height: 50px;
+      width: 100%;
+      inset: 0;
+      top: -5px;
+      left: -5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(113, 0, 199);
+      border: 3px solid black;
+      border-radius: 20px;
+      transition: all ease-in-out 0.2s;
+
+      &:hover {
+        background-color: rgb(92, 0, 162);
+        color: white;
+      }
+
+      &:active {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
