@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #6928bd;
+}
+
+#wrapper {
+  height: 97.5vh;
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+}
+#wrapper .box {
+  height: 100%;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+}
+#wrapper .box:hover {
+  flex-grow: 2;
+  outline: 2px solid #7dbd28;
+}
+#wrapper .box1 {
+  background-image: url(./Thor.jpg);
+}
+#wrapper .box2 {
+  background-image: url(./moonKnight.jpg);
+}
+#wrapper .box3 {
+  background-image: url(./ironman.jpg);
+}
+#wrapper .box4 {
+  background-image: url(./cat.jpg);
+}
+#wrapper .box5 {
+  background-image: url(./drDOOM2.jpg);
+}
+
+@media (max-width: 700px) {
+  #wrapper {
+    flex-wrap: wrap;
+  }
+  #wrapper .box {
+    width: 45vw;
+    height: 500px;
+  }
+  #wrapper .box:hover {
+    flex-grow: 1;
+    transform: scale(1.02);
+  }
+}/*# sourceMappingURL=style.css.map */

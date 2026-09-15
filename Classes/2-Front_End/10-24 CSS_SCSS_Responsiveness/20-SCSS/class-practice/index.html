@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 20 - SCSS</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" />
+  </head>
+  <body>
+    <main>
+      <h1>SCSS (Syntactically Awesome Style Sheets)</h1>
+
+      <section id="section1">
+        <h2>1. Variable</h2>
+        <p>
+          We can create variales using $, eg. $primary, and use it as value like $primary. Variables can take value like - color (#0000ff), Size (70px), String (Arial, sans-serif), Boolean (true,
+          false), Lists (Arial, Helvetica, sans-serif), Maps (multiple key-value pairs in { })
+        </p>
+        <p>Variables also has scope (global, or local), In a scope, Local variables dominates global variables.</p>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          $primary: #2563eb;
+          $spacing: 20px;
+          $font: Arial, sans-serif;
+
+          .button {
+          background: $primary;
+          padding: $spacing;
+          font-family: $font; 
+          }
+        </code>
+      </pre>
+        <p>We can use !global to change the value of a global variable in local scope.</p>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          $color: red;
+
+          .box {
+            $color: blue !global;
+          }
+        </code>
+      </pre>
+        <p>
+          CSS Variables remains in Browser and are determined on runtime, Whereas SCSS Variables are different. Thus we use combination of both CSS and SCSS. #{$primary} This is Interpolation, It
+          tells SASS, Insert the SCSS variable value here.
+        </p>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          $primary: #2563eb;
+          $secondary: #9333ea;
+
+          :root {
+            --primary: #{$primary};
+            --secondary: #{$secondary};
+          }
+        </code>
+      </pre>
+      </section>
+
+      <section id="section2">
+        <h2>2. Nesting</h2>
+        <p>In SCSS, you can nest your CSS the same way your HTML is structured</p>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          nav {
+            background: black;
+
+            ul {
+              list-style: none;
+
+              li {
+                display: inline-block;
+
+                a {
+                  color: white;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        </code>
+      </pre>
+      </section>
+
+      <section id="section3">
+        <h2>3. The & Parent Selector</h2>
+        <p>The & in nested rule set, denote the current parent selector.</p>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          .button {
+            &:hover {
+              background: black;
+            }
+          }
+        </code>
+      </pre>
+        <h3>The & with Modifiers</h3>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          .button {
+            background: blue;
+
+            &--large {
+              padding: 20px;
+            }
+
+            &--small {
+              padding: 5px;
+            }
+
+            &--danger {
+              background: red;
+            }
+          }
+        </code>
+      </pre>
+        <p>Produces</p>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          .button {
+            background: blue;
+          }
+
+          .button--large {
+            padding: 20px;
+          }
+
+          .button--small {
+            padding: 5px;
+          }
+
+          .button--danger {
+            background: red;
+          }
+        </code>
+      </pre>
+      </section>
+
+      <section id="section4">
+        <h2>4. Mixins</h2>
+        <p>A mixin is like a "reusable piece of code." If you find yourself writing the same CSS again and again for example, Flexbox centering you can save it as a mixin.</p>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          @mixin box($width, $color) {
+            width: $width;
+            background: $color;
+          }
+
+          .card {
+            @include box(200px, #ff6347);
+          }
+        </code>
+      </pre>
+      </section>
+
+      <section id="section5">
+        <h2>5. Partials & Imports</h2>
+        <p>So SCSS allows you to split your styles into small files called partials. Partial files start with Underscore ( _ ) . Example, _header.scss, _footer.scss. And use them like</p>
+        <pre class="line-numbers">
+          <code class="language-scss">
+            @import "header";
+            @import "footer";
+          </code>
+        </pre>
+
+        <p>Or if files are placed in folders like, components/_button.scss, button/_card.scss, Then</p>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          @use "components/button";
+          @use "components/card";
+        </code>
+      </pre>
+      </section>
+
+      <section id="section6">
+        <h2>6. Built-in Functions</h2>
+        <p>SCSS has some in-built color tools that make design tweaks super easy.</p>
+        <pre class="line-numbers">
+          <code class="language-scss">
+            lighten($color, 20%); // makes the color lighter 
+            darken($color, 10%); // makes the color darker 
+            mix(#ff0000, #0000ff,50%); // mixes two colors
+          </code>
+        </pre>
+      </section>
+
+      <section id="section7">
+        <h2>7. @if{...} @else {...}</h2>
+        <p>SCSS can perform logics.</p>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          $dark-mode: true;
+
+          body {
+            @if $dark-mode {
+              background: black;
+              color: white;
+            } @else {
+              background: white;
+              color: black;
+            }
+          }
+        </code>
+      </pre>
+      </section>
+
+      <section id="section8">
+        <h2>8. Loops @for {...}</h2>
+        <p>SCSS can generate CSS automatically. #{$i} this part is Interpolation.</p>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          @for $i from 1 through 5 {
+            .margin-#{$i} {
+              margin: $i * 5px;
+            }
+          }
+          // Generates
+          .margin-1 {
+            margin: 5px;
+          }
+          .margin-2 {
+            margin: 10px;
+          }
+          .margin-3 {
+            margin: 15px;
+          }
+          .margin-4 {
+            margin: 20px;
+          }
+          .margin-5 {
+            margin: 25px;
+          }
+        </code>
+      </pre>
+      </section>
+
+      <section id="section9">
+        <h2>9. Maps</h2>
+        <p>Maps are basically key/value collections.</p>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          $colors: (
+            primary: #2563eb,
+            success: #16a34a,
+            danger: #dc2626,
+            warning: #f59e0b
+          );
+
+          .button {
+            background: map-get($colors, primary);
+          }
+
+          // If we use this
+          @use "sass:map";
+
+          // Then we use map.get(), Instead of map-get()
+          .button {
+            background: map.get($colors, primary);
+          }
+        </code>
+      </pre>
+      </section>
+
+      <section id="section10">
+        <h2>10. Functions</h2>
+        <p>SCSS lets you create your own functions.</p>
+        <pre class="line-numbers">
+        <code class="language-scss">
+          @function double($number) {
+            @return $number * 2;
+          }
+
+          .box {
+            width: double(100px);
+          }
+        </code>
+      </pre>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-scss.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  </body>
+</html>
