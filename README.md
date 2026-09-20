@@ -124,6 +124,7 @@ Instead of continuing from my previous repository, I chose to restart the entire
 8. Apple Website UI Clone | (Repo) https://github.com/anilsolanki9/Apple-website-ui-clone-task | (Live) https://anilsolanki9.github.io/Apple-website-ui-clone-task/
 9. User cards Flexbox Task | (Repo) https://github.com/anilsolanki9/css-flexbox-layout-task5-day-15 | (Live) https://anilsolanki9.github.io/css-flexbox-layout-task5-day-15/
 10. NFT-selling-landing-page-ui-project | (Repo) https://github.com/anilsolanki9/NFT-selling-landing-page-ui-project | (Live) https://anilsolanki9.github.io/NFT-selling-landing-page-ui-project/
+11. Marvel Superheros Poster Grow (Task) | (Repo) https://github.com/anilsolanki9/poster-task-project | (Live) https://anilsolanki9.github.io/poster-task-project/
 
 ---
 
